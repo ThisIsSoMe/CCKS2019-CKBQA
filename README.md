@@ -1,2 +1,4 @@
 # CCKS2019-CKBQA
 A system for CCKS2019-CKBQA
+
+## 预处理
