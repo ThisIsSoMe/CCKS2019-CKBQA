@@ -4,7 +4,7 @@ A system for CCKS2019-CKBQA
 ## 知识库导入
 1. mysql安装
 
-mysql安装 参考网址：https://blog.csdn.n et/tianpy5/article/details/79842888
+mysql安装 参考网址：https://blog.csdn.net/tianpy5/article/details/79842888
 
 允许远程访问设置：https://blog.csdn.net/h985161183/article/details/82218710
 
