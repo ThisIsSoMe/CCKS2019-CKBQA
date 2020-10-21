@@ -25,6 +25,7 @@ Preprocess.ipynb
 1. 实体识别
 
     cd NER
+    
     sh ccks_run.sh
 
 2. 利用知识库进行优化，并进行实体链接
