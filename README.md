@@ -15,6 +15,9 @@ pymysqlpool安装参考网址：https://www.cnblogs.com/z-x-y/p/9481908.html
 pymsql安装：pip install PyMysqlPool
 
 ## 预处理
+
+Preprocess.ipynb
+
 对原始数据集（train/dev/test）进行预处理
 
 ## NER
