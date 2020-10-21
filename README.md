@@ -1,6 +1,8 @@
 # CCKS2019-CKBQA
 A system for CCKS2019-CKBQA
 
+知识库链接（BaiduNetDisk）：链接: https://pan.baidu.com/s/1XSH-kkzGZa49uE9oFY-GpQ 提取码: 7e5z
+
 ## 知识库导入
 1. mysql安装
 
