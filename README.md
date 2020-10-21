@@ -9,6 +9,7 @@ mysql安装 参考网址：https://blog.csdn.net/tianpy5/article/details/7984288
 允许远程访问设置：https://blog.csdn.net/h985161183/article/details/82218710
 
 pymysqlpool安装参考网址：https://www.cnblogs.com/z-x-y/p/9481908.html
+
 pymsql安装：pip install PyMysqlPool
 
 ## 预处理
@@ -17,6 +18,7 @@ pymsql安装：pip install PyMysqlPool
 ## NER
 
 1. 实体识别
+
     cd NER
     sh ccks_run.sh
 
@@ -32,4 +34,3 @@ pymsql安装：pip install PyMysqlPool
 
     cd PathRanking/model
     sh train.sh
-
