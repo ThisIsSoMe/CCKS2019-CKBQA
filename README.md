@@ -16,6 +16,14 @@ pymsql安装：pip install PyMysqlPool
 
 ## 预处理
 
+1. dataset
+
+    mkdir data
+
+You can download train/dev/test from https://github.com/pkumod/CKBQA and put them into data/
+
+2. preprocecss
+
 Preprocess.ipynb
 
 对原始数据集（train/dev/test）进行预处理
