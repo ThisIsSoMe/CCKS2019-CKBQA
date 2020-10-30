@@ -24,7 +24,7 @@ You can download train/dev/test from https://github.com/pkumod/CKBQA and put the
 
 2. preprocecss
 
-Preprocess.ipynb
+    Preprocess.ipynb
 
 对原始数据集（train/dev/test）进行预处理
 
