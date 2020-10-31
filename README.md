@@ -6,8 +6,8 @@ A system for CCKS2019-CKBQA
 ## Dependency
     python 3
     pytorch==3.5
-    pytrch-pretrained-bert==0.4
-    
+    pytorch-pretrained-bert==0.4
+
 
 ## 知识库导入
 1. mysql安装
