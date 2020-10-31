@@ -51,3 +51,7 @@ You can download train/dev/test from https://github.com/pkumod/CKBQA and put the
 
     cd PathRanking/model
     sh train.sh
+
+## 结果
+Average F1：
+![avatar](results.png)
