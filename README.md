@@ -20,6 +20,32 @@ pymysqlpool安装参考网址：https://www.cnblogs.com/z-x-y/p/9481908.html
 
 pymsql安装：pip install PyMysqlPool
 
+2. 知识库导入数据库
+
+    follow KB/kb_processing.ipydb to create database
+
+    useful instruction:
+
+    查看总体数据库信息：show databases;
+
+    创建数据库：create database ccks;
+
+    选择要使用的数据库：use ccks;
+
+    查看该数据库下的表的信息：show tables;
+    
+    查看表中数据个数：select count(*) from pkubase;
+    
+    查看表中最后6条数据：select * from pkubase order by id desc limit 0,6;
+    
+    查看当前使用的数据库名字：select database();
+    
+    查看表结构：desc pkuprop;
+    
+    sql创建表时的varchar(num)中的num表示字符个数而不是字节个数。
+    
+    更改密码：update mysql.user set authentication_string=password('yhjia') where user='root';
+
 ## 预处理
 
 1. dataset
