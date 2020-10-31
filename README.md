@@ -54,4 +54,5 @@ You can download train/dev/test from https://github.com/pkumod/CKBQA and put the
 
 ## 结果
 Average F1：
+
 ![avatar](results.png)
