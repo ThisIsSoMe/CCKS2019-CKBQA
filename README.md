@@ -3,6 +3,12 @@ A system for CCKS2019-CKBQA
 
 知识库链接（BaiduNetDisk）：链接: https://pan.baidu.com/s/1XSH-kkzGZa49uE9oFY-GpQ 提取码: 7e5z
 
+## Dependency
+    python 3
+    pytorch==3.5
+    pytrch-pretrained-bert==0.4
+    
+
 ## 知识库导入
 1. mysql安装
 
