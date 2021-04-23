@@ -68,6 +68,8 @@ You can download train/dev/test from https://github.com/pkumod/CKBQA and put the
 
     sh ccks_run.sh
 
+训练阶段将ccks_bert.cfg中的status字段改为train, 预测阶段改为tag
+
 2. 利用知识库进行优化，并进行实体链接
     实体识别的优化与实体链接
 
