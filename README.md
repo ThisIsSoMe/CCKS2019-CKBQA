@@ -81,10 +81,20 @@ data/questions_ws.txt
 2. 利用知识库进行优化，并进行实体链接
     实体识别的优化与实体链接
 
-## 问句分类
+## 语义相似度模型训练
 
-    Please ignore the dir:Question_classification copy.
-    It seems something wrong with git command.
+### 生成训练数据
+    cd PreScreen/preprocess/
+    data.ipynb
+
+### 训练
+    cd PathRanking/model/
+    sh train.sh
+
+## 方法1：基于问句分类的方法
+本方法先对问句进行分类，再检索当前类别的路径，最后经过语义相似度匹配模型
+![问句类型](question_classes.png)
+## 问句分类
 
     cd Question_classification/BERT_LSTM_word
     sh run.sh
@@ -93,6 +103,17 @@ data/questions_ws.txt
 
     cd PathRanking/model
     sh train.sh
+
+## 方法2：基于集束搜索的方法
+
+本方法基于路径跳数不大于2的假设，每一跳会保留topk个最优的当前路径
+
+### 预测部分
+
+    # 搜索一跳路径
+    cd PreScreen/data/
+    python onehop_path.py
+    # 待更新
 
 ## 结果
 Average F1：
