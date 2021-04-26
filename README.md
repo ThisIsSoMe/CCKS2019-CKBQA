@@ -91,19 +91,18 @@ data/questions_ws.txt
     cd PathRanking/model/
     sh train.sh
 
+
+## 问句分类模型训练
+    cd Question_classification/BERT_LSTM_word
+    sh run.sh
+
+
 ## 方法1：基于问句分类的方法
 本方法先对问句进行分类，再检索当前类别的路径，最后经过语义相似度匹配模型
 ![问句类型](question_classes.png)
 ## 问句分类
 
-    cd Question_classification/BERT_LSTM_word
-    sh run.sh
-
-## 语义相似度计算
-
-    cd PathRanking/model
-    sh train.sh
-
+    to do
 ## 方法2：基于集束搜索的方法
 
 本方法基于路径跳数不大于2的假设，每一跳会保留topk个最优的当前路径
