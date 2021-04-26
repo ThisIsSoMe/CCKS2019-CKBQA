@@ -97,6 +97,7 @@ data/questions_ws.txt
     sh run.sh
 
 
+## 预测部分
 ## 方法1：基于问句分类的方法
 本方法先对问句进行分类，再检索当前类别的路径，最后经过语义相似度匹配模型
 ![问句类型](question_classes.png)
