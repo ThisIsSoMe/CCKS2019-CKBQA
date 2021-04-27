@@ -19,11 +19,11 @@ from pytorch_pretrained_bert.optimization import BertAdam, WarmupLinearSchedule
 logger = logging.getLogger(__name__)
 
 # personal package
-from field import *
-from bert_function import *
-from model import *
-from args import get_args
-from data import Data
+from model.field import *
+from model.bert_function import *
+from model.model import *
+from model.args import get_args
+from model.data import Data
 
 alpha = 0.1 # 字符层面得分占比 not 0.5
 

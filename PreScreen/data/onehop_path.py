@@ -2,7 +2,7 @@ import sys
 import json
 import argparse
 from argparse import ArgumentParser
-sys.path.append('../')
+sys.path.append('../../')
 from utils import *
 read_con = pymysql.connect(host="192.168.126.143",port = 3337,user='root', password='pjzhang', database='ccks_2019',charset='utf8')
 cur = read_con.cursor()
@@ -100,8 +100,6 @@ if __name__ == '__main__':
             cand_paths = get_paths_ent(mentions, ents)
             one_question_paths['q'] = one_q_1
             one_question_paths['paths'] = list(set(cand_paths))
-            # from pdb import set_trace
-            # set_trace()
             question_paths.append(one_question_paths)
     json.dump(question_paths, open(fn_out, 'w'), ensure_ascii=False)
     print("问句数量：", len(question_paths))

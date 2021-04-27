@@ -108,12 +108,31 @@ data/questions_ws.txt
 
 本方法基于路径跳数不大于2的假设，每一跳会保留topk个最优的当前路径
 
-### 预测部分
+### 预测部分(to do 文件夹结构比较混乱，待优化)
 
-    # 搜索一跳路径
+# 已经训练好了语义相似度匹配模型
+# step1:搜索一跳路径
     cd PreScreen/data/
     python onehop_path.py
-    # 待更新
+
+# step2:预测topk一跳路径
+    cd PathRanking/model/
+    sh predict_stage1.sh
+
+# step3:搜索两跳路径
+    cd PathRanking/model/
+    sh search_path_stage2.sh
+# step4:预测一跳两条混合的所有路径中的topk
+    cd PathRanking/model/
+    sh predict_stage2.sh
+
+# step5：检索最后的答案
+    cd PreScreen/data/
+    sh search_ans.sh
+
+# step6：检验预测结果
+    # 注意修改答案文件路径
+    evaluation_answer.ipynb    
 
 ## 结果
 Average F1：
