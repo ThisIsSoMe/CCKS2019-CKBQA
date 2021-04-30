@@ -137,15 +137,15 @@ You can download train/dev/test from https://github.com/pkumod/CKBQA and put the
 
 
 
-# 已经训练好了语义相似度匹配模型
+### 已经训练好了语义相似度匹配模型
 
-# step1:搜索一跳路径
+### step1:搜索一跳路径
 
     cd PreScreen/data/
     python onehop_path.py
     生成./one_hop_paths.json
 
-# step2:预测topk一跳路径
+### step2:预测topk一跳路径
     
     mkdir /PreScreen/data/merge
     
@@ -154,27 +154,27 @@ You can download train/dev/test from https://github.com/pkumod/CKBQA and put the
     sh predict_stage1.sh
     生成PreScreen/data/merge/one_hop_predict_path.json:用途
 
-# step3:搜索两跳路径
+### step3:搜索两跳路径
 
     cd PathRanking/model/
     sh search_path_stage2.sh
     生成PreScreen/data/merge/mix_paths.json：用途
     生成PreScreen/data/merge/mix_paths_all.json：用途
     
-# step4:预测一跳两条混合的所有路径中的topk
+### step4:预测一跳两条混合的所有路径中的topk
 
     cd PathRanking/model/
     
     sh predict_stage2.sh 注：把此处的输入文件paths_all_merge.json更名为上一步search_path_stage2.sh生成的mix_paths_all_merge.json
     生成PreScreen/data/merge/mix_predict_path.json
 
-# step5：检索最后的答案
+### step5：检索最后的答案
 
     cd PreScreen/data/
     sh search_ans.sh
     生成PreScreen/data/merge/mix_answer.json：用途
 
-# step6：检验预测结果
+### step6：检验预测结果
 
     # 注意修改答案文件路径
     evaluation_answer.ipynb    
