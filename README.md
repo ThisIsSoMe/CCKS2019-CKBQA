@@ -1,6 +1,8 @@
 # CCKS2019-CKBQA
 A system for CCKS2019-CKBQA
 
+具体方法参考文章《中文知识库问答中的路径选择》：http://jcip.cipsc.org.cn/CN/abstract/abstract3196.shtml
+
 知识库链接（BaiduNetDisk）：链接: https://pan.baidu.com/s/1XSH-kkzGZa49uE9oFY-GpQ 提取码: 7e5z
 
 
